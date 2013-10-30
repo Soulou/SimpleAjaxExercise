@@ -1,0 +1,14 @@
+!!!5
+head
+  title My Ajax App
+  != css("application")
+  != js("zepto")
+  != js("underscore")
+  != js("application")
+
+body
+  h1 My Ajax webapp
+  form(name="autofillform" action="autocomplete" method="get")
+    input(autocomplete="off" type="text" id="name")
+    #autofill
+    input(type="submit" value="Submit")
